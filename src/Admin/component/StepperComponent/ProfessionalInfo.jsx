@@ -37,7 +37,6 @@ export const ProfessionalInfo = ({ handleStepperNext, setProfessionalInfo, profe
     const [specialityData, setSpecialityData] = React.useState([]);
     const [speciality, setSpeciality] = React.useState('');
     const [consultation_fee, setconsultation_fee] = React.useState('');
-    console.log(consultation_fee)
 
     const handleSpeciality = (event) => {
         setSpeciality(event.target.value)
@@ -47,7 +46,7 @@ export const ProfessionalInfo = ({ handleStepperNext, setProfessionalInfo, profe
         // professionalname: Yup.string().required('Required'),
         // // speciality: Yup.string().required('Required'),
         // bio: Yup.string().required('Required'),
-        // folionumber: Yup.number().integer().required('Required'),
+        folionumber: Yup.number().integer(),
         // consultation_fee: Yup.number().required('Required'),
         profileVideoUrl1: Yup.string().matches(URL_Validation, 'Enter correct url!'),
         profileVideoUrl2: Yup.string().matches(URL_Validation, 'Enter correct url!'),
@@ -72,7 +71,7 @@ export const ProfessionalInfo = ({ handleStepperNext, setProfessionalInfo, profe
         getData()
     }, [])
 
-
+    // console.log(consultation_fee)
     return (
         <div style={{ width: '100%' }} className={classes2.root}>
             <Formik initialValues={professionalInfo}
@@ -82,7 +81,7 @@ export const ProfessionalInfo = ({ handleStepperNext, setProfessionalInfo, profe
                         professionalname, bio, folionumber, speciality, consultation_fee, profileVideoUrl1, profileVideoUrl2, profileVideoUrl3, fb, insta, linkedin, tw, youtube, other
                     }
                     setProfessionalInfo(ProfessionalInfo)
-                    console.log(ProfessionalInfo)
+                    // console.log(ProfessionalInfo)
                     handleStepperNext()
 
                 }}
@@ -153,7 +152,11 @@ export const ProfessionalInfo = ({ handleStepperNext, setProfessionalInfo, profe
                                         outputFormat="string"
                                         decimalCharacter="."
                                         digitGroupSeparator=","
-                                        onChange={(e) => setconsultation_fee(e.target.value)}
+                                        onChange={(e) => {
+                                            var res = e.target.value.replace(/\D/g, "");
+                                            setconsultation_fee(res)
+                                        }
+                                        }
                                         className={classes.primaryInput}
                                         error={touched.consultation_fee && errors.consultation_fee}
                                         helperText={touched.consultation_fee && errors.consultation_fee}

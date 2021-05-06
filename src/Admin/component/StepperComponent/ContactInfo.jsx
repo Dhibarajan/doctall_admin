@@ -39,7 +39,8 @@ export const ContactInfo = ({ handleStepperNext, setContactInfo, contactInfo }) 
     }
 
     function handleOnChange(value) {
-        setMobile(value);
+        var res = value.replace(/\D/g, "");
+        setMobile(parseInt(res));
     }
 
     const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
@@ -50,8 +51,10 @@ export const ContactInfo = ({ handleStepperNext, setContactInfo, contactInfo }) 
         // address: Yup.string().required('Required'),
         // city: Yup.string().required('Required'),
         // state: Yup.string().required('Required'),
-        // postcode: Yup.number().required('Required').min(6)
+        // postcode: Yup.number().max(6)
     })
+
+
 
     return (
         <div style={{ width: '100%' }} className={classes2.root}>
@@ -59,6 +62,7 @@ export const ContactInfo = ({ handleStepperNext, setContactInfo, contactInfo }) 
                 initialValues={contactInfo}
                 onSubmit={(value) => {
                     const { email, address, city, state, postcode } = value;
+
                     const contactInfo = {
                         email, mobile, address, city, state, postcode, country
                     }

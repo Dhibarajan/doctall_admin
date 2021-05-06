@@ -107,11 +107,13 @@ function HrInfo({ handleStepperNext, hrinfo, setHrinfo, personalInfo }) {
     const [emgphone, setemgphone] = React.useState('')
     // country code
     function handleOnChange(value) {
-        setMobile(value);
+        const res = value.replace(/\D/g, "");
+        setMobile(parseInt(res));
     }
 
     function handleEmgPhone(value) {
-        setemgphone(value)
+        const res = value.replace(/\D/g, "");
+        setemgphone(parseInt(res))
     }
 
     // DialogBox open
@@ -228,7 +230,6 @@ function HrInfo({ handleStepperNext, hrinfo, setHrinfo, personalInfo }) {
                                         className={classes.primaryInput}
                                         variant="outlined"
                                         as={TextField}
-
                                         error={touched.postalcode && errors.postalcode}
                                         helperText={touched.postalcode && errors.postalcode}
                                         placeholder="Postal code" />

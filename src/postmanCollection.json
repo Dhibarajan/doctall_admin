@@ -1,0 +1,103 @@
+{
+    "email": "m.sathishkumar13@gmail.com",
+    "firstName": "sFrst",
+    "middleName": "mname",
+    "lastName": "sLst",
+    "group": "doctor",
+    "consultation_fee": 2000,
+    "profile": {
+        "dob": "12-12-2021",
+        "gender": "male",
+        "languages": [
+            "tamil",
+            "english"
+        ],
+        "sign_pic": "https://s3.eu-west-1.amazonaws.com/doctall.storage.com/assets/bcf803cf0f8489f09c9ef800cc62ea32.png",
+        "address": {
+            "houseNumber": "nush",
+            "city": "igdsfuy",
+            "state": "igd",
+            "postalcode": "663",
+            "country": "hdfgy"
+        },
+        "professional_detail": {
+            "professional": "doc"
+        },
+        "bio": "i am a heart",
+        "speciality": [
+            "heart"
+        ],
+        "folioNumber": 123448,
+        "rating": 0,
+        "doctorDocuments": [
+            {
+                "doc_id": "607e6005495fe6001afd8fd1",
+                "doc_type": "education"
+            },
+            {
+                "doc_id": "607e6005495fe6001afd8fd1",
+                "doc_type": "educ"
+            }
+        ],
+        "profileVideoUrl": [
+            "https://s3.eu-west-1.amazonaws.com/doctall.storage.com/assets/bcf803cf0f8489f09c9ef800cc62ea32.png",
+            "https://s3.eu-west-1.amazonaws.com/doctall.storage.com/assets/bcf803cf0f8489f09c9ef800cc62ea32.png"
+        ],
+        "social_media": {
+            "fb": "http://www.fb.com",
+            "tw": "http://www.tw.com",
+            "insta": "http://www.insta.com",
+            "linkedin": "http://www.lin.com",
+            "youtube": "http://www.yt.com",
+            "other": "http://www.oth.com"
+        },
+        "bank_detail": {
+            "acc_name": "321565",
+            "residential_address": {
+                "houseNumberName": "hgy",
+                "streetName": "uy",
+                "area": "hgdsvft"
+            },
+            "bank_name": "khdg",
+            "branch": "sdhu",
+            "acc_number": "ytfty",
+            "acc_type": "rtd",
+            "routingNumber": "huygy",
+            "bankSwiftIcd": "uih",
+            "bankIban": "huhu"
+        },
+        "hr_info": {
+            "full_name": "hrs",
+            "address": {
+                "houseNumber": "f",
+                "city": "igdsfuy",
+                "state": "igd",
+                "postalcode": 55,
+                "country": "uygf7t6"
+            },
+            "email": "hr@gmail.com",
+            "mobile": "918899663322",
+            "emergencyContact": {
+                "full_name": "duihu",
+                "address": {
+                    "houseNumber": "sjih",
+                    "city": "igdsfuy",
+                    "state": "igd",
+                    "postalcode": "12",
+                    "country": "hyud"
+                },
+                "email": "hr@gmail.com",
+                "mobile": "98623114488"
+            },
+            "professional_indemnity": true,
+            "dateAdded": "12-04-2021",
+            "license": {
+                "li_authority": "uyt7",
+                "dateIssue": "08-01-2010",
+                "dateExpiry": "09-10-2012"
+            }
+        }
+    },
+    "profile_pic": "https://s3.eu-west-1.amazonaws.com/doctall.storage.com/assets/bcf803cf0f8489f09c9ef800cc62ea32.png",
+    "mobile": "918328421346"
+}

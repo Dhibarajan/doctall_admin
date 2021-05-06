@@ -2,15 +2,21 @@ import React from 'react'
 import DoctorRegistrationByAdmin from './Admin/DoctorRegistrationByAdmin/DoctorRegistrationByAdmin';
 import DashbordLogin from './Admin/DashbordLogin/DashbordLogin';
 import ForgotPassword from './Admin/ForgotPassword/ForgotPassword';
+import UploadSuccessfull from './Admin/component/StepperComponent/UploadSuccessfull';
+import PleaseWait from './Admin/component/StepperComponent/PleaseWait';
+import RegistrationSuccess from './Admin/component/StepperComponent/RegistrationSuccess';
 
 
 
 function App() {
   return (
     <div className="App">
-      {/* <DoctorRegistrationByAdmin /> */}
+      <DoctorRegistrationByAdmin />
       {/* <DashbordLogin /> */}
-      <ForgotPassword />
+      {/* <ForgotPassword /> */}
+      {/* <UploadSuccessfull />
+      <PleaseWait/> */}
+      {/* <RegistrationSuccess /> */}
     </div>
   );
 }

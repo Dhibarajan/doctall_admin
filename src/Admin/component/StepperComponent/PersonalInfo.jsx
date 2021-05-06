@@ -162,6 +162,7 @@ export const PersonalInfo = ({ handleStepperNext, setPersonalinfo, personalInfo 
                 initialValues={personalInfo}
                 onSubmit={(value) => {
                     const { firstName, middleName, lastName, dob, languages } = value
+                    // console.log(dob)
                     const newValue = {
                         firstName, middleName, lastName, gender, dob, languages, profile_pic, sign_pic
                     }
